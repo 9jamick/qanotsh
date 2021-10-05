@@ -441,67 +441,14 @@
     <!-- Main -->
     <main class="page">
 
-        <section class=" section devide py">
+        <section class="section exchange py">
             <div class="container">
-                <table width="1000" class="table table-bordered table-striped" style="font-size: 1.6em;">
-                    <tbody>
-                        <tr>
-                            ^if(refund)$
-                            <td>
-                                <font face="Arial" size="2"> <b>Для осуществления возврата билетов Ваш заказ ^pnr$ на
-                                        сайте ^siteUrl$ был разделен</b> </font> ^endif$ ^if(exchange)$
-                            </td>
-                            <td>
-                                <font face="Arial" size="2"> <b>Для осуществления обмена билетов Ваш заказ ^pnr$ на
-                                        сайте ^siteUrl$ был разделен</b> </font> ^endif$
-                                <p>
-                                    <font face="Arial" size="2"><b>Список выделенных пассажиров</b></font>
-                                <table cellspacing="1" cellpadding="10" width="100%">
-                                    <tbody class="text-white" style="background: #263366;">
-                                        <tr>
-                                            <td bgcolor="#263366">
-                                                <div align="center">
-                                                    <font color="white" face="Arial" size="2">Фамилия</font>
-                                                </div>
-                                            </td>
-                                            <td bgcolor="#263366">
-                                                <div align="center">
-                                                    <font color="white" face="Arial" size="2">Имя Отчество</font>
-                                                </div>
-                                            </td>
-                                            <td bgcolor="#263366">
-                                                <div align="center">
-                                                    <font color="white" face="Arial" size="2">Дата рождения</font>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        ^passengers, birthdates:{passenger,birthdate|
-                                        <tr>
-                                            <td bgcolor="#eeeeee" class="text-dark">
-                                                <font face="Arial" size="2">^passenger.lastName$</font>
-                                            </td>
-                                            <td bgcolor="#eeeeee" class="text-dark">
-                                                <font face="Arial" size="2">^passenger.firstName$</font>
-                                            </td>
-                                            <td bgcolor="#eeeeee" class="text-dark">
-                                                <font face="Arial" size="2">^birthdate$</font>
-                                            </td>
-                                        </tr>
-                                        }$
-                                    </tbody>
-                                </table>
-                                </p>
-                                <p> ^if(refund)$ 
-                                    <font face="Arial" size="2"><b>Номер заказа для возврата
-                                            ^refundPnr$</b></font> ^endif$ ^if(exchange)$ <br>
-                                    <font face="Arial" size="2">
-                                        <b>Номер заказа для обмена ^refundPnr$</b>
-                                    </font> ^endif$
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2>В системе интернет-бронирования авиаперевозок "Сирена-Трэвел"
+                    обменян заказ ^pnr$</h2>
+
+                <div class="activation_text d-inline-block alert alert-warning" style="font-size: 16px;">
+                    Маршрут-квитанция заказа и условия перевозки находятся во вложении.
+                </div>
             </div>
         </section>
 
