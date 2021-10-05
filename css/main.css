@@ -1683,3 +1683,16 @@ header {
 .table{
   margin: 2rem 0;
 }
+
+.paidInvoice p, .payment p, .paymentExtraServices p, .refund p, .refund-manual p, .refund-request p{
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.head-bg{
+  background-color: #263366;
+}
+
+
